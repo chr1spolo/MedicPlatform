@@ -11,12 +11,13 @@
     <body @yield('bodyColor')>
 
         @yield('navbar')
-        <div class="uk-section">
+        <div class="uk-section" style="padding:0;">
             @yield('main')
         </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script src="{{ asset('js/uikit.min.js') }}"></script>
         <script src="{{ asset('js/uikit-icons.min.js') }}"></script>
+        @yield('custJS')
     </body>
 </html>
